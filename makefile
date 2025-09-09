@@ -40,3 +40,7 @@ migrate:
 fresh-seed:
 	@docker-compose exec app php artisan migrate:fresh --seed
 	@echo "\033[32mБД пересоздана с сидами\033[0m"
+
+fresh:
+	@docker-compose exec app php artisan migrate:fresh
+	@echo "\033[32mБД пересоздана\033[0m"
